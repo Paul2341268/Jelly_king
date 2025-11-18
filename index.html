@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Platformer Jump</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="game-title">젤리 킹</h1>
+
+  <div class="game-container">
+    
+    <canvas id="gameCanvas" width="400" height="800"></canvas>
+    
+    <div class="description-box">
+      <h2>게임 방법</h2>
+      <p>
+        <strong>← (왼쪽)</strong> / <strong>→ (오른쪽)</strong>: 이동<br>
+        <strong>스페이스바</strong>: 점프
+      </p>
+
+      <h3>발판 종류</h3>
+      <ul>
+        <li><strong>흰 구름:</strong> 일반 발판입니다.</li>
+        <li><strong>움직이는 구름:</strong> 좌우로 움직입니다.</li>
+        <li><strong>무지개:</strong> 높이 점프합니다! (무적)</li>
+        <li><strong>먹구름:</strong> 밟으면 0.5초 뒤 사라집니다.</li>
+      </ul>
+
+      <h3>적 (Enemies)</h3>
+      <ul>
+        <li><strong>보라색 몬스터:</strong> 좌우로 움직입니다. 닿으면 게임 오버!</li>
+        <li><strong>운석:</strong> 빨간 경고선이 3초간 깜빡인 후, 그 자리로 운석이 떨어집니다.</li>
+      </ul>
+    </div> </div> <script src="js/platformer_jump.js"></script>
+</body>
+</html>

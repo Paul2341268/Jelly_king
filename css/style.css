@@ -1,0 +1,96 @@
+/*
+========================================
+Platformer Jump 게임 CSS 코드
+(4.5단계: '게임 설명' 박스 추가)
+========================================
+*/
+
+/* 구글 픽셀 폰트 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* body: 페이지 전체 배경 및 중앙 정렬 */
+body {
+  background-color: #dbe9fa;
+  /* ❤️ 기본 폰트는 Arial로 되돌림 (설명글씨) */
+  font-family: Arial, sans-serif;
+  
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px; /* ❤️ 페이지 여백 */
+  box-sizing: border-box;
+}
+
+/* 게임 타이틀 스타일 */
+.game-title {
+  font-family: 'Press+Start+2P', cursive;
+  font-size: 2.2rem; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 0px #4a6c8c, 4px 4px 0px rgba(0,0,0,0.2);
+  margin: 0;
+  margin-bottom: 25px; 
+}
+
+/* ❤️ 캔버스와 설명을 묶는 컨테이너 */
+.game-container {
+  display: flex;
+  flex-direction: row; /* 가로로 배치 */
+  align-items: flex-start; /* 위쪽 정렬 */
+  gap: 25px; /* 캔버스와 설명박스 사이 간격 */
+}
+
+/* 캔버스 스타일 */
+canvas {
+  display: block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  
+  /* ❤️ 캔버스가 줄어들어도 깨지지 않게 (반응형) */
+  flex-shrink: 0; 
+}
+
+/* ❤️ 게임 설명 박스 스타일 */
+.description-box {
+  width: 250px; /* 설명 박스 너비 */
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* 패딩이 너비를 초과하지 않게 */
+  color: #333;
+}
+
+.description-box h2 {
+  font-family: 'Press+Start+2P', cursive;
+  font-size: 1.1rem;
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description-box h3 {
+  font-family: 'Press+Start+2P', cursive;
+  font-size: 0.8rem;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+.description-box p,
+.description-box ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.description-box ul {
+  padding-left: 20px;
+}
+
+.description-box li {
+  margin-bottom: 8px;
+}
